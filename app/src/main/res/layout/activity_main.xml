@@ -6,22 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        
+        android:background="@color/purple_200"
         >
-
+        <com.ong.readmoretextview.ReadMoreTextView
+            android:textColor="@color/black"
+            android:id="@+id/readMoreTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="dafnkldjaiofjdioajfiodajiofdjaiofjiodajfiodjioafjiodajiofj9dadafdanfkojdaiofjioadjifojadiojdaiofjdaiofar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+            app:readMoreText="...더보기"
+            app:readMoreColor="@color/teal_700"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
-        />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
